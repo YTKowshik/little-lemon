@@ -1,6 +1,10 @@
+
+import NavComponent from './nav-component';
+import LogoComponent from './logo-component';
 const Header= () =>{
-    return <header>
-        <img src="/logo.svg" alt="logo" />
+    return <header className='flex-row'>
+        <LogoComponent></LogoComponent>
+        <NavComponent></NavComponent>
     </header>;
 };
 

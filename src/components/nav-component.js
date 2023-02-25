@@ -1,6 +1,6 @@
 const NavComponent= () =>{
-    return <nav>
-        <ul>
+    return <nav className='flex-5'>
+        <ul className="flex-row flex-evenly list-style-none">
             <li>Home</li>
             <li>Reserve a Table</li>
             <li>About</li>
