@@ -1,12 +1,21 @@
-const NavComponent= () =>{
-    return <nav className='flex-5'>
-        <ul className="flex-row flex-evenly list-style-none">
-            <li>Home</li>
-            <li>Reserve a Table</li>
-            <li>About</li>
-            <li>Contact us</li>
-        </ul>
-    </nav>;
-};
+import { Nav, Navbar, NavLink } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import LogoComponent from "#components/logo-component";
 
+const NavComponent = () => {
+    return (
+        <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark" className="flex-row w-100">
+            <LogoComponent></LogoComponent>
+            <Navbar.Toggle aria-controls="navbarScroll" data-bs-toggle="collapse" data-bs-target="#navbarScroll" />
+            <Navbar.Collapse id="navbarScroll" className="text-center">
+                <Nav>
+                    <NavLink  eventKey="1" as={Link} to="/">Home</NavLink>
+                    <NavLink  eventKey="2" as={Link} to="/about">About</NavLink>
+                    <NavLink  eventKey="3" as={Link} to="/contact">Contact</NavLink>
+                </Nav>
+            </Navbar.Collapse>     
+        </Navbar>
+    );
+}
+ 
 export default NavComponent;

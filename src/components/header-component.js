@@ -1,9 +1,8 @@
 
-import NavComponent from './nav-component';
-import LogoComponent from './logo-component';
+import NavComponent from '#components/nav-component';
+
 const Header= () =>{
     return <header className='flex-row'>
-        <LogoComponent></LogoComponent>
         <NavComponent></NavComponent>
     </header>;
 };
