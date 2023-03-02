@@ -12,7 +12,9 @@ import FooterComponent from '#components/footer-component';
 import Home from '#components/home-component';
 import About from '#components/about-component';
 import Contact from '#components/contact-component';
+import Booking from '#components/booking-component';
 //#endregion
+import globals from '#src/globals';
 function App() {
   return (
     <Router>
@@ -20,8 +22,10 @@ function App() {
       <MainComponent />
       <Routes>
         <Route exact path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path={globals.NAV_HOME} element={<Home />} />
+        <Route path={globals.NAV_ABOUT} element={<About />} />
+        <Route path={globals.NAV_CONTACT} element={<Contact />} />
+        <Route path={globals.NAV_BOOKING} element={<Booking />} />
       </Routes>
       <FooterComponent></FooterComponent>
     </Router>
