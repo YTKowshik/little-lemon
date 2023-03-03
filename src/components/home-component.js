@@ -1,7 +1,15 @@
+import HighLights from "#components/highlights-component";
+import Categories from "#components/categories-component";
+import Dishes from "#components/dish-component";
+
 const Home = () => {
     return (
-        <h1>Home Page</h1>
+        <>
+            <HighLights></HighLights>
+            <Categories></Categories>
+            <Dishes></Dishes>
+        </>
     );
 }
- 
+
 export default Home;
