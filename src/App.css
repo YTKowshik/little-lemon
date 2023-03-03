@@ -173,7 +173,9 @@ footer {
   margin: -0.5rem -0.5rem 0 -0.5rem;
   border-radius: 0.3rem 0.3rem 0 0;
 }
-
+#booking-form{
+  padding: 1rem;
+}
 .App-link {
   color: #61dafb;
 }
