@@ -1,5 +1,5 @@
 //#region  "Styles"
-import '#src/App.css';
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 //#endregion
 //#region "React Elements"
