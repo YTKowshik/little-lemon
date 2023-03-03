@@ -1,4 +1,4 @@
-import DishCard from "#components/dish-card-component";
+import DishCard from "../components/dish-card-component";
 
 const Dishes = () => {
     const dishes = [{ dishname: "Greek Salad", dishImage: "greek salad.jpg", dishDescription: "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.", price: 12.99 },

@@ -1,6 +1,6 @@
-import HighLights from "#components/highlights-component";
-import Categories from "#components/categories-component";
-import Dishes from "#components/dish-component";
+import HighLights from "../components/highlights-component";
+import Categories from "../components/categories-component";
+import Dishes from "../components/dish-component";
 
 const Home = () => {
     return (

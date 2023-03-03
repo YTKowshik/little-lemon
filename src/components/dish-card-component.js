@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import CounterComponent from "#components/counter-component";
+import CounterComponent from "../components/counter-component";
 
 const DishCard = (props) => {
     return <Container fluid className="dish-card">

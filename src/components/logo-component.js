@@ -1,6 +1,6 @@
-import image from '#asset-images/Logo.svg';
+import image from '../assets/images/Logo.svg';
 import { Link } from 'react-router-dom';
-import globals from '#src/globals';
+import globals from '../globals';
 const LogoComponent = () => {
     return <div className='flex-row  justify-start'>
         <Link to={globals.NAV_HOME}>

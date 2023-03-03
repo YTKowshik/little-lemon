@@ -1,5 +1,5 @@
 
-import NavComponent from '#components/nav-component';
+import NavComponent from '../components/nav-component';
 
 const Header= () =>{
     return <header className='flex-row'>

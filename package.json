@@ -14,13 +14,6 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "imports": {
-    "#root/*": "./*",
-    "#src/*":"./src/*",
-    "#components/*":"./src/components/*.js",
-    "#context/*":"./src/context/*.js",
-    "#asset-images/*":"./src/assets/images/*"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

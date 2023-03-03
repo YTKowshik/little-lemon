@@ -1,4 +1,4 @@
-// import BreadCrumbNavComponent from "#components/breadcrumb-nav-component";
+// import BreadCrumbNavComponent from "../components/breadcrumb-nav-component";
 
 const MainComponent = () => {
     return <main>

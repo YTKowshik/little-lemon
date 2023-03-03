@@ -1,7 +1,7 @@
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import globals from '#src/globals';
-import restaurantLogo from '#asset-images/restauranfood.jpg';
+import globals from '../../src/globals';
+import restaurantLogo from '../../src/assets/images/restauranfood.jpg';
 const HighLights = () => {
     return <div className="lil-lemon-highlight">
         <h2>Little Lemon</h2>

@@ -1,8 +1,8 @@
 import { Nav, Navbar, NavLink } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import LogoComponent from "#components/logo-component";
-import globals from '#src/globals';
-import imgCart from '#asset-images/cart.svg';
+import LogoComponent from "../components/logo-component";
+import globals from '../globals';
+import imgCart from '../assets/images/cart.svg';
 
 const NavComponent = () => {
     return (
