@@ -1,4 +1,4 @@
-import { Form, Button, InputGroup } from "react-bootstrap";
+import { Form, Button, InputGroup, Row, Col } from "react-bootstrap";
 
 const BookingForm = () => {
     return (
@@ -10,7 +10,7 @@ const BookingForm = () => {
             <Form.Group>
                 <Form.Label htmlFor="res-time">Choose time</Form.Label>
                 <InputGroup>
-                <Form.Control type="time"></Form.Control>
+                    <Form.Control type="time" min={new Date().toISOString().slice(11, 16)} ></Form.Control>
                 </InputGroup>
             </Form.Group>
             <Form.Group>
@@ -24,9 +24,15 @@ const BookingForm = () => {
                     <option>Anniversary</option>
                 </Form.Select>
             </Form.Group>
-            <Button className="mt-3" id="btn-Reserve" variant="primary" type="submit">
-                Make Your reservation
-            </Button>
+            <div className="m-0 p-0 d-flex align-center justify-center submit-div">
+                <Button className="mt-3" variant="primary" type="submit">
+                    Make Your reservation
+                </Button>
+            </div>
+            <Row className="m-0 p-0 d-flex align-center justify-center bottom-bar">
+                <Col></Col>
+                <Col></Col>
+            </Row>
         </Form>
     );
 };
