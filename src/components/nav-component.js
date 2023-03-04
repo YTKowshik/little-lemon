@@ -18,10 +18,10 @@ const NavComponent = () => {
             <Link className="d-xs-block d-md-none d-sm-none d-lg-none" ><img src={imgCart} alt="cart" /></Link>
             <Navbar.Collapse id="navbarScroll" className="text-center flex-evenly">
                 <Nav>
-                    <NavLink eventKey="1" as={Link} to={globals.NAV_HOME}>Home</NavLink>
-                    <NavLink eventKey="2" as={Link} to={globals.NAV_ABOUT}>About</NavLink>
-                    <NavLink eventKey="3" as={Link} to={globals.NAV_CONTACT}>Contact</NavLink>
-                    <Button bsPrefix="btn-qr" onClick={handleShow} >Scan to Login</Button>
+                    <NavLink eventKey="1" as={Link} to={globals.NAV_HOME}><i className="bi bi-house-door-fill"></i> &nbsp; Home</NavLink>
+                    <NavLink eventKey="2" as={Link} to={globals.NAV_ABOUT}><i className="bi bi-info-circle-fill"></i>&nbsp; About</NavLink>
+                    <NavLink eventKey="3" as={Link} to={globals.NAV_CONTACT}><i className="bi bi-person-rolodex"></i>&nbsp; Contact</NavLink>
+                    <NavLink eventKey="4" onClick={handleShow} ><i className="bi bi-qr-code-scan"></i>&nbsp; Scan to Login</NavLink>
                 </Nav>
             </Navbar.Collapse>
             <Link className="d-none d-sm-block" ><img src={imgCart} alt="cart" /></Link>
