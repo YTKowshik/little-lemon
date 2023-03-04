@@ -75,9 +75,12 @@ html::-webkit-scrollbar {
   font-weight: bold;
   color: whitesmoke !important;
 }
-
+header{
+  position: sticky;
+  top:0;
+}
 footer {
-  position: absolute;
+  position: sticky;
   bottom: 0;
 }
 
