@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/little-lemon/static/css/main.50306233.css",
-    "main.js": "/little-lemon/static/js/main.6a4e1132.js",
+    "main.js": "/little-lemon/static/js/main.4c242426.js",
     "static/media/bruchetta.svg": "/little-lemon/static/media/bruchetta.29ea078fea3d3120ed22.svg",
     "static/media/greek salad.jpg": "/little-lemon/static/media/greek salad.bed423a1fab5b210e347.jpg",
     "static/media/restauranfood.jpg": "/little-lemon/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
     "static/media/bootstrap-icons.woff?": "/little-lemon/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
     "static/media/bootstrap-icons.woff2?": "/little-lemon/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
     "static/media/Logo.svg": "/little-lemon/static/media/Logo.6c132dfefa69396bba43f72aa595e62f.svg",
-    "index.html": "/little-lemon/index.html",
     "static/media/cart.svg": "/little-lemon/static/media/cart.25519810bf5a6d23c1a4cadc3df118bd.svg",
+    "index.html": "/little-lemon/index.html",
     "main.50306233.css.map": "/little-lemon/static/css/main.50306233.css.map",
-    "main.6a4e1132.js.map": "/little-lemon/static/js/main.6a4e1132.js.map"
+    "main.4c242426.js.map": "/little-lemon/static/js/main.4c242426.js.map"
   },
   "entrypoints": [
     "static/css/main.50306233.css",
-    "static/js/main.6a4e1132.js"
+    "static/js/main.4c242426.js"
   ]
 }
