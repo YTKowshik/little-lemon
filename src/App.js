@@ -26,7 +26,6 @@ function App() {
         <Route path={globals.NAV_ABOUT} element={<About />} />
         <Route path={globals.NAV_CONTACT} element={<Contact />} />
         <Route path={globals.NAV_BOOKING} element={<Booking />} />
-        <Route path='/little-lemon/' element={<Home />} />
       </Routes>
       <FooterComponent></FooterComponent>
     </Router>
