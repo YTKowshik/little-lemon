@@ -13,8 +13,8 @@ const DishCard = (props) => {
             </Col>
         </Row>
         <Row className="d-flex w-100 m-0" >
-            <Col xs={8} className="p-0 mt-2">{'$'+props.dish.price}</Col>
-            <Col xs={4} className="p-0">
+            <Col xs={9} className="p-0 mt-2">{'$'+props.dish.price}</Col>
+            <Col xs={3} className="p-0 ml-2">
                 <CounterComponent></CounterComponent>
             </Col>
         </Row>

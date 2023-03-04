@@ -1,6 +1,6 @@
 import { Form, Button, InputGroup, Row, Col } from "react-bootstrap";
 
-const BookingForm = () => {
+const BookingForm = ({availableTimes}) => {
     return (
         <Form id="booking-form" >
             <Form.Group>
@@ -10,7 +10,9 @@ const BookingForm = () => {
             <Form.Group>
                 <Form.Label htmlFor="res-time">Choose time</Form.Label>
                 <InputGroup>
-                    <Form.Control type="time" min={new Date().toISOString().slice(11, 16)} ></Form.Control>
+                    <Form.Select id="res-time">
+                        {availableTimes?.times?.map(x => {return <option key={`time_${x}`}>{x}</option>})}
+                    </Form.Select>
                 </InputGroup>
             </Form.Group>
             <Form.Group>

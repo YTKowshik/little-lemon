@@ -27,7 +27,7 @@ function App() {
         <Route path={globals.NAV_CONTACT} element={<Contact />} />
         <Route path={globals.NAV_BOOKING} element={<Booking />} />
       </Routes>
-      <FooterComponent></FooterComponent>
+      <FooterComponent className="footer fixed-bottom"></FooterComponent>
     </Router>
   );
 }

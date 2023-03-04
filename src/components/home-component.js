@@ -1,26 +1,54 @@
 import HighLights from "../components/highlights-component";
 import Categories from "../components/categories-component";
 import Dishes from "../components/dish-component";
-import { useEffect, useReducer } from "react";
-
-function reducer(state, action) {
-    return state;
-  }
-const initializeTimes =()=>{}
+import { useState, useEffect, useReducer } from "react";
+import { fetchAPI, submitAPI } from '../api/api';
 const Home = () => {
-    const [availableTimes,dispatch] = useReducer(reducer,{},initializeTimes);
+    const [bookingData, setBookingData] = useState({
+        date: " ",
+        times: [],
+        guests: " ",
+        occasion: " ",
+    });
 
-    const updateTimes=()=>{
-        dispatch({});
+
+    const today = new Date();
+
+    const initializeTimes = { times: fetchAPI(today) };
+
+    const [availableTimes, setAvailableTimes] = useReducer(updateTimes, initializeTimes);
+
+    const submitForm = () => {
+        const res = submitAPI(bookingData);
+        if (res === true) {
+            return true;
+        } else {
+            return false;
+        }
+    };
+
+    function updateTimes(state, action) {
+        if (action.type === "init") {
+            return { times: fetchAPI(today) };
+        }
+        if (action.type === "update_times") {
+            let selectedBookingDate = new Date(bookingData.date);
+            let newTimes = fetchAPI(selectedBookingDate);//.map(x => x.split(":"));
+            return { times: newTimes };
+        }
     }
-    useEffect(()=>{
-        document.title="Little Lemon | Home";
-    },[]);
+    useEffect(() => {
+        document.title = "Little Lemon | Home";
+    }, []);
     return (
         <main>
-            <HighLights></HighLights>
+            <HighLights bookingData={bookingData}
+                setBookingData={setBookingData}
+                availableTimes={availableTimes}
+                setAvailableTimes={setAvailableTimes}
+                submitForm={submitForm} ></HighLights>
             <Categories></Categories>
-            <Dishes></Dishes>
+            <Dishes ></Dishes>
         </main>
     );
 }

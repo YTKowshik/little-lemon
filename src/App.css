@@ -12,7 +12,6 @@
   color: black;
   font-weight: bold;
 }
-
 .plus {
   /* background-color: #198754; */
   background-color: var(--restaurant-bg-color);
