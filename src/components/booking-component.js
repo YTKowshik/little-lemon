@@ -8,7 +8,9 @@ const Booking = () => {
         document.title="Little Lemon | Booking";
     },[]);
     return (
-        <BookingForm availableTimes={availableTimes} submitForm={submitForm} 
+        <BookingForm 
+        availableTimes={availableTimes} 
+        submitForm={submitForm} 
         setBookingData={setBookingData} ></BookingForm>
     );
 }
