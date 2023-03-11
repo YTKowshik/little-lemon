@@ -15,18 +15,23 @@ import Contact from '../src/components/contact-component';
 import Booking from '../src/components/booking-component';
 //#endregion
 import globals from '../src/globals';
+import { BookingContextProvider } from './context/booking-context';
+import ConfirmedBooking from './components/confirmBooking-component';
 function App() {
   return (
     <Router basename='/little-lemon'>
       <Header />
       <MainComponent />
-      <Routes>
-        <Route exact path='/' element={<Home />} />
-        <Route path={globals.NAV_HOME} element={<Home />} />
-        <Route path={globals.NAV_ABOUT} element={<About />} />
-        <Route path={globals.NAV_CONTACT} element={<Contact />} />
-        <Route path={globals.NAV_BOOKING} element={<Booking />} />
-      </Routes>
+      <BookingContextProvider>
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route path={globals.NAV_HOME} element={<Home />} />
+          <Route path={globals.NAV_ABOUT} element={<About />} />
+          <Route path={globals.NAV_CONTACT} element={<Contact />} />
+          <Route path={globals.NAV_BOOKING} element={<Booking />} />
+          <Route path={globals.CONFIRM_BOOKING} element={<ConfirmedBooking />} />
+        </Routes>
+      </BookingContextProvider>
       <FooterComponent className="footer fixed-bottom"></FooterComponent>
     </Router>
   );

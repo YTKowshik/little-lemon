@@ -1,14 +1,15 @@
 import { useEffect } from "react";
 import BookingForm from "../components/forms/booking-form";
-import { useLocation } from 'react-router-dom';
+import { useBooking } from "../context/booking-context";
 
 const Booking = () => {
-    const locData=useLocation();
+    const {bookingData, availableTimes,setBookingData,submitForm,setAvailableTimes} = useBooking();
     useEffect(()=>{
         document.title="Little Lemon | Booking";
     },[]);
     return (
-        <BookingForm availableTimes={locData.state.availableTimes} ></BookingForm>
+        <BookingForm availableTimes={availableTimes} submitForm={submitForm} 
+        setBookingData={setBookingData} ></BookingForm>
     );
 }
 export default Booking;

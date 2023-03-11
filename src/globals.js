@@ -3,6 +3,7 @@ const globals={
     NAV_ABOUT: '/about',
     NAV_CONTACT: '/contact',
     NAV_BOOKING: '/booking',
+    CONFIRM_BOOKING:'/confirmed-booking',
 
     // BASE_URL: 'http://someurl.com',
     // COLOR: {

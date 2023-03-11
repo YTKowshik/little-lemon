@@ -1,8 +1,15 @@
-import { Form, Button, InputGroup, Row, Col } from "react-bootstrap";
+import { Form, Button, InputGroup } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
-const BookingForm = ({availableTimes}) => {
+const BookingForm = ({availableTimes,submitForm,setBookingData}) => {
+    const navigate = useNavigate();
+    const handleSubmit =(e)=>{
+        e.preventDefault();
+        setBookingData();
+        return submitForm()?  navigate('/confirmed-booking'): false;
+    }
     return (
-        <Form id="booking-form" >
+        <Form id="booking-form" onSubmit={handleSubmit} >
             <Form.Group>
                 <Form.Label htmlFor="res-date">Choose date</Form.Label>
                 <Form.Control type="date" id="res-date" min={new Date().toISOString().slice(0, 10)} />
@@ -31,10 +38,6 @@ const BookingForm = ({availableTimes}) => {
                     Make Your reservation
                 </Button>
             </div>
-            <Row className="m-0 p-0 d-flex align-center justify-center bottom-bar">
-                <Col></Col>
-                <Col></Col>
-            </Row>
         </Form>
     );
 };
