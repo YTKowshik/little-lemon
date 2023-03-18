@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import {  useRef, useState } from "react";
 import { Form, Button, InputGroup } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
@@ -98,7 +98,7 @@ const isValid = () =>{
                 </Form.Select>
             </Form.Group>
             <div className="m-0 p-0 d-flex align-center justify-center submit-div">
-                <Button className="mt-3" variant="primary" type="submit" disabled={!validForm}>
+                <Button aria-label="On Click" className="mt-3" variant="primary" type="submit" disabled={!validForm}>
                     Make Your reservation
                 </Button>
             </div>

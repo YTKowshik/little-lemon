@@ -3,7 +3,7 @@ import BookingForm from "../components/forms/booking-form";
 import { useBooking } from "../context/booking-context";
 
 const Booking = () => {
-    const {bookingData, availableTimes,setBookingData,submitForm,setAvailableTimes} = useBooking();
+    const { availableTimes,setBookingData,submitForm} = useBooking();
     useEffect(()=>{
         document.title="Little Lemon | Booking";
     },[]);
